@@ -1,0 +1,20 @@
+{
+  "name": "prognosports-docs",
+  "version": "1.1",
+  "description": "Generate and post documentation about PrognoSports API and related",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "vuepress": "^1.5.2",
+    "vuepress-auto-sidebar": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "docs:dev": "node generate.js && vuepress dev docs",
+    "docs:build": "node generate.js && vuepress build docs"
+  },
+  "author": "Cadiducho",
+  "license": "ISC"
+}
