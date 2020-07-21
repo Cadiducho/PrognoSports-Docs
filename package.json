@@ -1,6 +1,6 @@
 {
   "name": "prognosports-docs",
-  "version": "1.1",
+  "version": "1.1.0",
   "description": "Generate and post documentation about PrognoSports API and related",
   "main": "index.js",
   "directories": {

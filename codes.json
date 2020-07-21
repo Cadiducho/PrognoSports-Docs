@@ -1,0 +1,107 @@
+{
+  "600": {
+    "message": "Invalid Credentials",
+    "description": "You can not log in with these credentials",
+    "causes": [
+      "Wrong username or email",
+      "Wrong password"
+    ],
+    "solutions": [
+      "Write correctly your username or mail",
+      "Write correctly your password"
+    ]
+  },
+  "601": {
+    "message": "Unauthorized. Token not found",
+    "description": "The token is not specified in the request",
+    "causes": [
+      "Token is not found in the HTTP header"
+    ],
+    "solutions": [
+      "Configure your header in the following way: `Authorization: yourAuthToken`"
+    ]
+  },
+  "602": {
+    "message": "Unauthorized. Invalid token",
+    "description": "The token is malformed and is not valid to authenticate",
+    "causes": [
+      "Token is not signed by PrognoSports",
+      "This is not a JWT token",
+      "Unknown data signed inside the token"
+    ],
+    "solutions": [
+      "Create another auth token"
+    ]
+  },
+  "603": {
+    "message": "Unauthorized. Orphan token",
+    "description": "The token is not associated to any user",
+    "causes": [
+      "The token is no longer used to log in by any user"
+    ],
+    "solutions": [
+      "Create another auth token"
+    ]
+  },
+  "604": {
+    "message": "Unauthorized. Token rejected",
+    "description": "The token used to be fine, but is no longer accepted",
+    "causes": [
+      "The user invalid manually this token",
+      "The token is old, and it expired"
+    ],
+    "solutions": [
+      "Create another auth token"
+    ]
+  },
+  "605": {
+    "message": "Unauthorized. Invitation needed",
+    "description": "An invitation is needed to perform this action, likely to join a Community",
+    "causes": [
+      "You do not have an invitation to perform that action"
+    ],
+    "solutions": [
+      "Specify invitation code in the URL path"
+    ]
+  },
+  "606": {
+    "message": "Unauthorized. Invalid invitation",
+    "description": "The invitation used is not valid",
+    "causes": [
+      "The invitation is not associated at the community you are trying to access"
+    ],
+    "solutions": [
+      "Send a correct invitation in the path"
+    ]
+  },
+  "607": {
+    "message": "Unauthorized. No permission for that",
+    "description": "You can not perform that action",
+    "causes": [
+      "That action you are triying to do is only allowed for administrator or higher community permissions level"
+    ],
+    "solutions": [
+      "None"
+    ]
+  },
+  "608": {
+    "message": "You must send the security token",
+    "description": "To change the password or similar 2-factor authed actions, you must send the security token",
+    "causes": [
+      "Security Token is not found"
+    ],
+    "solutions": [
+      "Specify Security Token in the request body with `token` name"
+    ]
+  },
+  "609": {
+    "message": "You must send new the password",
+    "description": "To change the password you need send the new one",
+    "causes": [
+      "New password is not found"
+    ],
+    "solutions": [
+      "Send the new password in the request body with `password` name"
+    ]
+  }
+}
